@@ -13,6 +13,6 @@ def get_current_price(coin_ids, vs_currencies="usd"):
         params={
             "ids": coin_ids,
             "vs_currencies": vs_currencies,
-            "x_cg_demo_api_key": os.getenv("x_cg_demo_api_key", "default"),
+            "x_cg_demo_api_key": os.getenv("X_CG_DEMO_API_KEY", "default"),
         },
     ).json()
