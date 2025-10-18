@@ -1,1 +1,0 @@
-[{"uid":"46876c0ef6e1c1bd","name":"test_get_current_price_with_two_currency","time":{"start":1760818610457,"stop":1760818610551,"duration":94},"status":"failed","severity":"normal"},{"uid":"975209e2d284c47e","name":"test_get_current_price_with_one_currency","time":{"start":1760818610328,"stop":1760818610437,"duration":109},"status":"failed","severity":"normal"}]
