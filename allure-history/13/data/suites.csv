@@ -1,0 +1,31 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Тест который делает ничего
+
+Шаги:
+________
+Зато в комментах есть assert
+Падение линтера все равно должно произойти и тесты не запустятся
+
+UPD:
+","1","test_with_pass","tests","Sun May 17 17:16:57 UTC 2026","passed","Sun May 17 17:16:57 UTC 2026","","test_without_asserts","",""
+"Поломанный тест
+
+Шаги:
+________
+Получаем курс Bitcoin на доллары USD и EUR
+Проверяем, что курс имеется (и падаем =))
+","60","test_get_current_price_with_two_currency_failed","tests","Sun May 17 17:16:57 UTC 2026","failed","Sun May 17 17:16:57 UTC 2026","","test_happy_path","",""
+"Получение курса для двух валют
+
+Шаги:
+________
+Получаем курс Bitcoin на доллары USD и EUR
+Проверяем, что курс имеется
+","111","test_get_current_price_with_two_currency","tests","Sun May 17 17:16:57 UTC 2026","passed","Sun May 17 17:16:57 UTC 2026","","test_happy_path","",""
+"Получение курса для одной валюты
+
+Шаги:
+________
+Получаем курс Bitcoin на доллары USD
+Проверяем, что курс имеется
+","183","test_get_current_price_with_one_currency","tests","Sun May 17 17:16:57 UTC 2026","passed","Sun May 17 17:16:57 UTC 2026","","test_happy_path","",""
