@@ -69,6 +69,8 @@ jobs:
         run: mkdir -p allure-results
 
       - name: Run tests with make
+        env:
+          X_CG_DEMO_API_KEY: ${{secrets.X_CG_DEMO_API_KEY}}
         run: make test
         continue-on-error: true  # Продолжаем даже если тесты упали
 
@@ -103,8 +105,9 @@ jobs:
 
       - name: Send Allure results
         if: always()
-        run: |
-          echo "Sending Allure results with URL: $ALLURE_URL"
-          uv run ./scripts/send_allure_results.py
         env:
           ALLURE_URL: ${{ env.ALLURE_URL }}
+          TG_BOT_TOKEN: ${{secrets.TG_BOT_TOKEN}}
+        run: |
+          echo "Sending Allure results with URL: $ALLURE_URL"
+          make send_report  
